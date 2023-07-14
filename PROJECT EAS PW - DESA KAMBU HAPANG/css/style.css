@@ -1,0 +1,318 @@
+* {
+  list-style: none;
+  text-decoration: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: rgb(56, 55, 51);
+  --tols: #00cec3;
+}
+
+/* Navbar start */
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: var(--tols);
+  top: 0;
+  position: sticky;
+  margin: 0;
+  z-index: 99999999;
+  box-shadow: 0 1px 5px black;
+}
+
+.Navbar .Nav-logo {
+  gap: 30px;
+  align-items: center;
+  display: flex;
+}
+
+.Navbar .Nav-logo img {
+  width: 50px;
+}
+
+.Navbar .Nav-logo h2 {
+  text-shadow: 2px 2px 3px white;
+}
+
+.Navbar .Nav-logo font {
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+
+.Navbar .Nav-menu ul li {
+  display: inline-block;
+}
+
+.Navbar .Nav-menu ul li a {
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.Navbar .Nav-menu ul li a:hover {
+  background-color: #01fff2;
+  text-shadow: 1px 1px 3px white;
+  color: black;
+}
+
+.Nav-dropdown {
+  display: none;
+  top: 70px;
+  position: absolute;
+  width: 200px;
+  background-color: var(--tols);
+  background-color: beige;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.Nav-dropdown li a {
+  display: flex;
+  margin-left: -5px;
+  width: 300px;
+  background-color: springgreen;
+  border-radius: 10px;
+}
+
+.Nav-dropdown li a:hover {
+  border-radius: 0;
+}
+
+.Navbar .Nav-menu ul li:hover .Nav-dropdown {
+  display: block;
+}
+
+/* Navbar end */
+
+/* Home start */
+
+/* Background img start  */
+.bg-img {
+  display: flex;
+  background-image: url("../img/desa.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 100%;
+  height: 500px;
+  align-items: center;
+  color: white;
+  padding: 30px;
+  text-shadow: 3px 3px 3px black;
+}
+
+/* .bg-img .sambutan-bg p, */
+
+.bg-img .sambutan-bg h2 {
+  font-size: 30px;
+}
+.bg-img .sambutan-bg h2 span {
+  color: rgb(245, 208, 0);
+}
+/* Background img end */
+
+/* Sambutan kepala seda start */
+.Sambutan-Kepdes {
+  background-color: var(--tols);
+  display: flex;
+  padding: 20px 100px;
+  margin-bottom: 20px;
+}
+
+.Sambutan-Kepdes div {
+  overflow: hidden;
+  width: 500px;
+  border-radius: 10px;
+}
+
+.Sambutan-Kepdes .img {
+  height: 500px;
+  box-shadow: 5px 5px 10px black;
+}
+
+.Sambutan-Kepdes .img img {
+  width: 500px;
+  transition: 0.5s;
+}
+
+.Sambutan-Kepdes div img:hover {
+  transform: scale(1.05);
+}
+
+.Sambutan-Kepdes .isi-sambutan {
+  margin-left: 30px;
+  padding: 20px;
+  width: 60%;
+}
+
+.Sambutan-Kepdes .isi-sambutan p {
+  font-size: 20px;
+}
+/* Sambutan kepala seda end */
+
+/* VisMis start */
+.VisMis {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 100px;
+  text-transform: capitalize;
+}
+
+.VisMis .img-vismis {
+  width: auto;
+}
+
+.VisMis div {
+  width: 40%;
+  border-radius: 10px;
+  padding: 30px;
+  transition: 0.5s;
+  margin: 30px 0;
+  font-size: 18px;
+}
+
+.VisMis div:hover {
+  transform: scale(1.03);
+  box-shadow: 5px 5px 10px black;
+  background-color: aliceblue;
+}
+
+.VisMis div ul li {
+  list-style: decimal;
+}
+
+.VisMis div img {
+  width: 300px;
+  margin: 0 60px;
+  margin-bottom: 20px;
+}
+
+.VisMis .Misi img {
+  width: 200px;
+}
+/* VisMis end */
+
+/* Home end */
+
+/* Struktur Organisasi start */
+.StuOr {
+  display: flex;
+  justify-content: center;
+}
+/* Struktur Organisasi end */
+
+/* Sejarah start */
+.Sejarah {
+  display: block;
+  padding: 20px 150px;
+}
+
+.Sejarah h2 {
+  text-align: center;
+  font-size: 30px;
+  text-decoration: underline;
+  padding: 20px 0;
+}
+
+.Sejarah .img-sej {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 30px var(--tols);
+  margin-bottom: 30px;
+}
+
+.Sejarah .img-sej img {
+  width: 100%;
+  margin-bottom: -50px;
+  transition: 0.3s;
+}
+
+.Sejarah .img-sej img:hover {
+  transform: scale(1.03);
+}
+
+.Sejarah p {
+  font-size: 20px;
+  text-align: justify;
+  text-indent: 30px;
+}
+/* Sejarah emd */
+
+/* Contact start */
+.Contact {
+  margin: 20px 150px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.Contact .Lokasi iframe {
+  margin-top: 15px;
+  width: 500px;
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 0 0 3px black;
+}
+
+.Contact .Lokasi iframe:hover {
+  box-shadow: 5px 5px 10px black;
+  transform: scale(1.02);
+}
+
+.Contact-desa {
+  width: 40%;
+  padding: 20px;
+}
+
+.Contact-desa h2 {
+  padding: 20px;
+}
+
+.Contact-desa table {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.Contact-desa table tr td {
+  padding: 10px 0;
+  padding-right: 35px;
+  border-bottom: 1px dashed black;
+}
+
+.Contact-desa table tr .right {
+  text-align: right;
+  padding: 0;
+  padding-left: 30px;
+}
+
+.Contact-desa table tr,
+.Contact-desa font {
+  transition: 0.3s;
+}
+
+.Contact-desa table tr:hover,
+.Contact-desa font:hover {
+  transform: scale(1.03);
+  font-weight: bold;
+}
+
+/* Contact end */
+
+/* Footer start */
+footer {
+  background-color: var(--tols);
+  text-align: center;
+  padding: 20px;
+}
+
+/* Footer end */
